@@ -23,8 +23,10 @@ $$
 
 There are various theories and algorithms to determine Langevin parameters. However, many of them rely on microscopic simulation data, including Ab Initio MD simulation (AIMD). AIMD is one of the most accurate techniques but still another form of simulation with inherent assumptions.
 
-Can we systematically learn or extract information from experimental data, the true source?
+Can we systematically learn or extract information from experimental data, the ground truth?
 
 This is where the Neural Langevin Equation comes in. It first runs a simulation and then learns the conservative, dissipative, and random forces from the difference between the simulation itself and a reference dataset.
+
+You only need very basic libraries, such as PyTorch, torchdiffeq, numpy, and matplotlib.
 
 Note: The GLE version of this code will be made public soon. Stay tuned!
